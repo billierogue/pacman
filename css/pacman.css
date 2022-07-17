@@ -1,0 +1,345 @@
+@font-face {
+    font-family: "prstart";
+    src: url("../prstartk.ttf");
+}
+
+body, html{
+    background-color: black;
+    font-family: "prstart";
+    margin: auto;
+    
+}
+
+h3{
+    font-family:"prstart"; 
+    color: white;
+}
+
+/* S T R U C T U R E */
+
+/* H O M E */
+.Home{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#ready {
+    color: white;
+}
+.navbar {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar2 {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    gap: 50px;
+}
+li a{
+    word-spacing: 3px;
+    text-decoration: none;
+    color: white;
+    padding: 8px ;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#pac-man-header{
+    transform: scaleX(-1);
+    margin-right: 55px;
+}
+
+.Home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sprites{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+    gap: 15px;
+    animation-name: loop;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+#insert-coins{
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    animation-name: blinks;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* LOOP ANIMATION */
+
+@keyframes loop{
+    0%{ transform: translateX(1000px);}
+    100% {transform: translateX(-1000px);}
+}
+
+@keyframes blinks{
+    50%{opacity: 0;}
+}
+
+@keyframes loop2{
+    0%{ transform: translateX(-1000px);}
+    100% {transform: translateX(1000px);}
+}
+
+
+/* SECTION 2--------------- */ 
+#High-Scores{
+    border: 1px solid yellow;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 150px;
+}
+
+#ready{
+    color: yellow;
+    font-size: 25px;
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#ten-best{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Rankings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+}
+.Rank-heading {
+    margin-bottom: 50px;
+}
+.Score-heading{
+    margin-bottom: 50px;
+}
+
+.Initials-heading{
+    margin-bottom: 50px;
+}
+
+
+.Rank-place h3:nth-child(4n+1), .Rank-score h3:nth-child(4n+1), .Initialz h3:nth-child(4n+1){
+    color: orange;
+}
+
+.Rank-place h3:nth-child(4n+2), .Rank-score h3:nth-child(4n+2), .Initialz h3:nth-child(4n+2){
+    color: red;
+}
+
+.Rank-place h3:nth-child(4n+3), .Rank-score h3:nth-child(4n+3), .Initialz h3:nth-child(4n+3){
+    color: turquoise;
+}
+
+.Rank-place h3:nth-child(4n+4), .Rank-score h3:nth-child(4n+4), .Initialz h3:nth-child(4n+4){
+    color: pink;
+}
+
+ /* SECTION 3 */
+#How-To{
+    border: 1px solid yellow;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a:hover{
+    color: yellow;
+    transition: .5s all ease-in-out;
+}
+
+#pacman-how-to{
+    margin-right: 55px;    
+}
+
+.how-to-sprites{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 130px;
+    gap: 15px;
+    margin-bottom: 50px;
+    animation-name: loop2;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#how-to-h2{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#yellow-heading{
+    color: rgb(255, 251, 0);
+    margin-bottom: 0%;
+   
+}
+#instructions{
+    text-align: center;
+    width: 650px;
+    color: white;
+    margin-top: 0%;
+}
+
+/* FINAL SECTION */
+#Players{
+    border: 1px solid yellow;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 150px;
+    margin-bottom: 85px;
+}
+
+#players{
+    margin-top: 150px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#character-nickname { 
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ghost{
+    transform: scaleX(-1);
+}
+
+.red-blinky{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 10px;
+    gap: 30px;
+    margin-bottom: 2%;
+}
+
+.red-blinky:nth-of-type(1){
+    color: red;
+}
+
+.pinky-speedy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 10px;
+    gap: 30px;  
+    margin-bottom: 2%;
+}
+
+.pinky-speedy:nth-of-type(2){
+    color: palevioletred;
+}
+
+.bashful-inky{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 10px;
+    gap: 37px; 
+    margin-bottom: 2%; 
+}
+
+.bashful-inky:nth-of-type(3){
+    color: rgb(26, 226, 252) ;
+}
+
+.pokey-clyde{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 10px;
+    gap: 45px;  
+    margin-bottom: 2%;
+}
+
+.pokey-clyde:nth-of-type(4){
+    color: rgb(240, 179, 65);
+}
+
+.points-200{
+    margin-top:50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.eaten{
+   height: 39px;
+}
+
+.points-50{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#square-50{
+    width: 15px ;
+    height: 15px;
+    background-color: yellow;
+}
+
+.points-10{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#square-10{
+    width: 5px ;
+    height: 5px;
+    background-color: yellow;
+}
+
+/*F O O T E R */
+.footer{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 7px;
+}
